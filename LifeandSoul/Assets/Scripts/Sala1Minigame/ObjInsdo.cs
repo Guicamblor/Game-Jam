@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class ObjInsdo : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float speed = 5f;
+    Rigidbody rigid;
+    public Transform chao;
     void Start()
     {
         
-    }
-
-    // Update is called once per frame
+    }   
     void Update()
     {
-        
+        rigid = GetComponent<Rigidbody>();
+        rigid.velocity = new Vector3(speed + Time.deltaTime, 0, transform.position.z);
     }
 }

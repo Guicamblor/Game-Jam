@@ -5,12 +5,17 @@ using UnityEngine;
 public class Insta : MonoBehaviour
 {
     public GameObject[] obj;
-
+    public float cooldownTime = 2f;
+    public float proximarodada = 0;
     void Update()
     {
-        for (int i = 0; i < obj.Length; i++)
+        if (Time.time > proximarodada)
         {
-            Instantiate(obj[i]);
+            for (int i = 0; i < obj.Length; i++)
+            {
+                Instantiate(obj[i]);
+                proximarodada = Time.time + cooldownTime;
+            }
         }
     }
 }
