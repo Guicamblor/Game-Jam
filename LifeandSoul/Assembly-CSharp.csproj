@@ -62,8 +62,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Player\Interacao.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
+    <Compile Include="Assets\Scripts\Sala1Minigame\Insta.cs" />
+    <Compile Include="Assets\Scripts\Sala1Minigame\ObjInsdo.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/TEMP/Desktop/Game-Jam2.0/Game-Jam2.0/LifeandSoul/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
