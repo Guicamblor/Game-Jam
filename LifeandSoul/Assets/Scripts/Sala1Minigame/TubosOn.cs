@@ -18,7 +18,7 @@ public class TubosOn : MonoBehaviour
             }
             
         }
-        else if(GetComponent<LiberaPorta>().porta == true)
+        if(GetComponent<LiberaPorta>().porta == true)
         {
             for (int i = 0; i < tubo.Length; i++)
             {

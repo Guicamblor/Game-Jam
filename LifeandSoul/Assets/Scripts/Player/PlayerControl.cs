@@ -55,7 +55,7 @@ public class PlayerControl : MonoBehaviour
     void Animating(float h, float v)
     {
         bool walking = (h != 0f || v != 0f);
-        anim.SetBool("IsWalking", walking);
+        //anim.SetBool("IsWalking", walking);
     }
     void OnCollisionEnter(Collision collision)
     {

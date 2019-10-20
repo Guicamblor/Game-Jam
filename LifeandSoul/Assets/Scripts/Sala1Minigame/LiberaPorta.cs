@@ -10,14 +10,14 @@ public class LiberaPorta : MonoBehaviour
 
     private void Start()
     {
-            porta.SetActive(true);
+            porta.SetActive(false);
             Opentdoor = false;
     }
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Objetos")
         {
-            porta.SetActive(false);
+            porta.SetActive(true);
             Opentdoor = true;
         }
     }

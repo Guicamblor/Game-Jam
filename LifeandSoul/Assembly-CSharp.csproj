@@ -62,7 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Menu\scrMenu.cs" />
+    <Compile Include="Assets\Menu\scrMenu.cs" />
     <Compile Include="Assets\Scripts\Player\CameraControl2.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\Sala1Minigame\AI.cs" />
@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\Sala1Minigame\PickupOBJ.cs" />
     <Compile Include="Assets\Scripts\Sala1Minigame\PlayerPos.cs" />
     <Compile Include="Assets\Scripts\Sala1Minigame\TubosOn.cs" />
+    <Compile Include="Assets\Scripts\Sala2Minigame\ContadorCD.cs" />
     <Compile Include="Assets\Scripts\Sala2Minigame\EmiInsvolt.cs" />
     <Compile Include="Assets\Scripts\Sala2Minigame\RotacaoCena.cs" />
     <None Include="Assets\Sprites\Font\upheaval.txt" />
