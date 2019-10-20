@@ -6,14 +6,11 @@ public class ObjInsdo : MonoBehaviour
 {
     public float speed = 5f;
     Rigidbody rigid;
-    public Transform chao;
-    void Start()
-    {
-        
-    }   
+    
     void Update()
     {
-        rigid = GetComponent<Rigidbody>();
-        rigid.velocity = new Vector3(speed + Time.deltaTime, 0, transform.position.z);
+        //faz o objeto se mexer que você quer instanciar 
+            rigid = GetComponent<Rigidbody>();
+            rigid.velocity = new Vector3(speed, 0, 0);
     }
 }

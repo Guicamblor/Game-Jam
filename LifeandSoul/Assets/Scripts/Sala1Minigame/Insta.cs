@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class Insta : MonoBehaviour
 {
-    public GameObject[] obj;
     public float cooldownTime = 2f;
     public float proximarodada = 0;
+    public GameObject prefabs;
     void Update()
     {
+        //Spawna a cada tempo que eu determinar
         if (Time.time > proximarodada)
         {
-            for (int i = 0; i < obj.Length; i++)
-            {
-                Instantiate(obj[i]);
-                proximarodada = Time.time + cooldownTime;
-            }
+            Instantiate(prefabs, transform.position, Quaternion.identity);
+             proximarodada = Time.time + cooldownTime;
         }
     }
 }

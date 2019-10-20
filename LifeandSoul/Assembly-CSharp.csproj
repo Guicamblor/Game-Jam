@@ -62,9 +62,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Player\Player.cs" />
+    <Compile Include="Assets\Scripts\Player\CameraControl2.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
+    <Compile Include="Assets\Scripts\Sala1Minigame\Elevador.cs" />
+    <Compile Include="Assets\Scripts\Sala1Minigame\Esteira.cs" />
     <Compile Include="Assets\Scripts\Sala1Minigame\Insta.cs" />
+    <Compile Include="Assets\Scripts\Sala1Minigame\LiberaPorta.cs" />
     <Compile Include="Assets\Scripts\Sala1Minigame\ObjInsdo.cs" />
+    <Compile Include="Assets\Scripts\Sala1Minigame\PickupOBJ.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/TEMP/Desktop/Game-Jam2.0/Game-Jam2.0/LifeandSoul/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
