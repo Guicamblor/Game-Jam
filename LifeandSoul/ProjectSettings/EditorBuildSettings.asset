@@ -6,10 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/Menu/Menu2.unity
     guid: 2c63da8eee14cde4283e7450efd0bdb4
   - enabled: 1
     path: Assets/Scenes/SalaCen/SalaCen/SalaCen.unity
+=======
+    path: Assets/Scenes/Menu/Menu.unity
+    guid: 2c63da8eee14cde4283e7450efd0bdb4
+  - enabled: 1
+    path: Assets/Scenes/SalaCen/SalaCen.unity
+>>>>>>> gui
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Sala1/Sala1.unity
