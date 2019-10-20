@@ -62,10 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-=======
     <Compile Include="Assets\Scripts\Menu\scrMenu.cs" />
->>>>>>> gui
     <Compile Include="Assets\Scripts\Player\CameraControl2.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\Player\TransicaoScene.cs" />
