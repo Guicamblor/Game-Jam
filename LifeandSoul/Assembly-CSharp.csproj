@@ -63,9 +63,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Menu\scrMenu.cs" />
-<<<<<<< Updated upstream
-    <Compile Include="Assets\Scripts\Player\Player.cs" />
-=======
     <Compile Include="Assets\Scripts\Player\CameraControl2.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\Sala1Minigame\AI.cs" />
@@ -73,18 +70,14 @@
     <Compile Include="Assets\Scripts\Sala1Minigame\Elevador.cs" />
     <Compile Include="Assets\Scripts\Sala1Minigame\Esteira.cs" />
     <Compile Include="Assets\Scripts\Sala1Minigame\GameMaster.cs" />
->>>>>>> Stashed changes
     <Compile Include="Assets\Scripts\Sala1Minigame\Insta.cs" />
     <Compile Include="Assets\Scripts\Sala1Minigame\LiberaPorta.cs" />
     <Compile Include="Assets\Scripts\Sala1Minigame\ObjInsdo.cs" />
-<<<<<<< Updated upstream
-=======
     <Compile Include="Assets\Scripts\Sala1Minigame\PickupOBJ.cs" />
     <Compile Include="Assets\Scripts\Sala1Minigame\PlayerPos.cs" />
     <Compile Include="Assets\Scripts\Sala1Minigame\TubosOn.cs" />
     <Compile Include="Assets\Scripts\Sala2Minigame\EmiInsvolt.cs" />
     <Compile Include="Assets\Scripts\Sala2Minigame\RotacaoCena.cs" />
->>>>>>> Stashed changes
     <None Include="Assets\Sprites\Font\upheaval.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/atiny/Desktop/Game Jam 2019/Game-Jam/LifeandSoul/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
