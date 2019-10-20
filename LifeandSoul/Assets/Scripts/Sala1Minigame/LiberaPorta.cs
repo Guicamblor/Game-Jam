@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LiberaPorta : MonoBehaviour
 {
+    //colocar rigidybody, colocar collider, colocar a tag objetos e colocar como IsKinect
     public GameObject porta;
     bool Opentdoor = false;
 

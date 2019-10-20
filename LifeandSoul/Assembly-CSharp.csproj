@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player\CameraControl2.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
+    <Compile Include="Assets\Scripts\Sala1Minigame\AI.cs" />
     <Compile Include="Assets\Scripts\Sala1Minigame\Elevador.cs" />
     <Compile Include="Assets\Scripts\Sala1Minigame\Esteira.cs" />
     <Compile Include="Assets\Scripts\Sala1Minigame\Insta.cs" />
