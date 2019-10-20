@@ -15,10 +15,7 @@ public class Elevador : MonoBehaviour
      void OnTriggerEnter()
     {
         EstaPerto = true;
-<<<<<<< HEAD
         Debug.Log("OI");
-=======
->>>>>>> gui
     }
     void OnTriggerExit()
     {
@@ -44,11 +41,7 @@ public class Elevador : MonoBehaviour
             Botao.GetComponent<Renderer>().material.color = Color.green;
             EstaParado = false;
         }
-<<<<<<< HEAD
         if(Input.GetKey(KeyCode.Q) && EstaPerto == true && EstaParado == true)
-=======
-        if(Input.GetKeyDown("E") && EstaPerto == true && EstaParado == true)
->>>>>>> gui
         {
             if(transform.position == paradaBaixo.transform.position)
             {

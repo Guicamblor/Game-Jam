@@ -11,6 +11,9 @@ public class AI : MonoBehaviour
     private int randomSpot;
     private float waitTime;
 
+    public GameObject icons;
+    bool iconsOn;
+
     void Start()
     {
         waitTime = startWaitTime;
@@ -33,5 +36,20 @@ public class AI : MonoBehaviour
                 waitTime -= Time.deltaTime;
             }
         }
+        
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            iconsOn = true;
+            icons.SetActive(true);
+        }
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        iconsOn = false;
+        icons.SetActive(false);
     }
 }

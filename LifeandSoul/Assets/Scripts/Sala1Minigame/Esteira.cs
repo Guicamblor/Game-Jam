@@ -16,7 +16,7 @@ public class Esteira : MonoBehaviour
 
     void FixedUpdate()
     {
-        rend.materials[0].SetTextureOffset("MainText", new Vector2(velocidadeTextura, 0) * Time.time);
+        rend.materials[0].SetTextureOffset("_MainTex", new Vector2(velocidadeTextura, 0) * Time.time);
         Movimento();
     }
     void Movimento()
@@ -25,13 +25,5 @@ public class Esteira : MonoBehaviour
         {
             objeto.position += new Vector3(velocidadeTextura, 0, 0) * Time.time;
         }
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        objetos.Add(other.transform);
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        objetos.Remove(other.transform);
     }
 }

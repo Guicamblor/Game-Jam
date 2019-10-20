@@ -5,61 +5,63 @@ using UnityEngine.SceneManagement;
 
 public class PlayerControl : MonoBehaviour
 {
-    public float speed = 6f;
-    Vector3 movement;
+    public float velocidade;
+
+    // otimização :3 (evita coleta de lixo desnecessário)
+    Vector3 deltaMovimento = Vector3.zero;
+    public Transform raioRef;
+    public float raioDist, chaoDist;
+    Transform meu_transform;
     Animator anim;
-    Rigidbody playerRig;
-    int floorMask;
-    float camRayLength = 100f;
 
     void Awake()
     {
-        floorMask = LayerMask.GetMask("Floor");
-
+        meu_transform = GetComponent<Transform>();
+        transform.tag = "Player";
         anim = GetComponent<Animator>();
-        playerRig = GetComponent<Rigidbody>();
     }
-
     void FixedUpdate()
     {
-        float h = Input.GetAxisRaw("Horizontal");
-        float v = Input.GetAxisRaw("Vertical");
-        Move(h, v);
-        Turning();
-        Animating(h, v);
-    }
-    void Move(float h, float v)
-    {
-        movement.Set(h, 0f, v);
+        // guarda de antemão a rotação
+        var rotacaoAntes = meu_transform.rotation;
 
-        movement = movement.normalized * speed * Time.deltaTime;
-
-        playerRig.MovePosition (transform.position + movement);
-    }
-
-    void Turning()
-    {
-        Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        RaycastHit floorHit;
-
-        if (Physics.Raycast(camRay, out floorHit, camRayLength, floorMask))
+        // aplica movimento
         {
-            Vector3 playerToMouse = floorHit.point - transform.position;
-            playerToMouse.y = 0f;
+            // reseta rotação para que a função Translate não nos faça voar
+            meu_transform.rotation = Quaternion.Euler(0, meu_transform.localEulerAngles.y, 0);
 
-            Quaternion newRotation = Quaternion.LookRotation(playerToMouse);
-            playerRig.MoveRotation(newRotation);
+            // define eixos usando entrada do usuário
+            deltaMovimento.x = Input.GetAxis("Horizontal");
+            deltaMovimento.z = Input.GetAxis("Vertical");
+
+            // normaliza se necessário
+            if (deltaMovimento.magnitude > 1)
+                deltaMovimento.Normalize();
+
+            // multiplica pela velocidade e delta tempo
+            deltaMovimento *= velocidade * Time.deltaTime;
+
+            // aplica movimento
+            meu_transform.Translate(deltaMovimento);
         }
-    }
-    void Animating(float h, float v)
-    {
-        bool walking = (h != 0f || v != 0f);
-<<<<<<< HEAD
-        //anim.SetBool("IsWalking", walking);
-=======
-        anim.SetBool("IsWalking", walking);
->>>>>>> gui
+
+        // acompanhar chão
+        {
+            // faz raycast pra baixo
+            Ray raio = new Ray(raioRef.position, Vector3.down);
+            RaycastHit hit;
+            if (Physics.Raycast(raio, out hit, raioDist))
+            {
+                // acompanha distância do chão
+                Vector3 pos = meu_transform.position;
+                pos.y = hit.point.y + chaoDist;
+                meu_transform.position = pos;
+            }
+        }
+
+        // redefine a rotação que tinha antes
+        meu_transform.rotation = rotacaoAntes;
+
     }
     void OnCollisionEnter(Collision collision)
     {
@@ -74,6 +76,10 @@ public class PlayerControl : MonoBehaviour
         if (collision.gameObject.name == "Boss")
         {
             SceneManager.LoadScene("Boss");
+        }
+        if(collision.gameObject.name == "Encomenda")
+        {
+            SceneManager.LoadScene("SalaCen2");
         }
     }
 }
