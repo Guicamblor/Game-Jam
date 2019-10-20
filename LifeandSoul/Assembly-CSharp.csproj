@@ -62,7 +62,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Assets\Menu\scrMenu.cs" />
+=======
+    <Compile Include="Assets\Scripts\Menu\scrMenu.cs" />
+<<<<<<< Updated upstream
+    <Compile Include="Assets\Scripts\Player\Player.cs" />
+=======
+>>>>>>> gui
     <Compile Include="Assets\Scripts\Player\CameraControl2.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\Sala1Minigame\AI.cs" />
@@ -70,6 +77,7 @@
     <Compile Include="Assets\Scripts\Sala1Minigame\Elevador.cs" />
     <Compile Include="Assets\Scripts\Sala1Minigame\Esteira.cs" />
     <Compile Include="Assets\Scripts\Sala1Minigame\GameMaster.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Sala1Minigame\Insta.cs" />
     <Compile Include="Assets\Scripts\Sala1Minigame\LiberaPorta.cs" />
     <Compile Include="Assets\Scripts\Sala1Minigame\ObjInsdo.cs" />
@@ -112,6 +120,47 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/TEMP/Desktop/Game-Jam/Game-Jam/LifeandSoul/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+=======
+>>>>>>> Stashed changes
+    <Compile Include="Assets\Scripts\Sala1Minigame\Insta.cs" />
+    <Compile Include="Assets\Scripts\Sala1Minigame\LiberaPorta.cs" />
+    <Compile Include="Assets\Scripts\Sala1Minigame\ObjInsdo.cs" />
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Assets\Scripts\Sala1Minigame\PickupOBJ.cs" />
+    <Compile Include="Assets\Scripts\Sala1Minigame\PlayerPos.cs" />
+    <Compile Include="Assets\Scripts\Sala1Minigame\TubosOn.cs" />
+    <Compile Include="Assets\Scripts\Sala2Minigame\EmiInsvolt.cs" />
+    <Compile Include="Assets\Scripts\Sala2Minigame\RotacaoCena.cs" />
+>>>>>>> Stashed changes
+    <None Include="Assets\Sprites\Font\upheaval.txt" />
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>C:/Users/atiny/Desktop/Game Jam 2019/Game-Jam/LifeandSoul/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>C:/Users/atiny/Desktop/Game Jam 2019/Game-Jam/LifeandSoul/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>C:/Users/atiny/Desktop/Game Jam 2019/Game-Jam/LifeandSoul/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Users/atiny/Desktop/Game Jam 2019/Game-Jam/LifeandSoul/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>C:/Users/atiny/Desktop/Game Jam 2019/Game-Jam/LifeandSoul/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>C:/Users/atiny/Desktop/Game Jam 2019/Game-Jam/LifeandSoul/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>C:/Users/atiny/Desktop/Game Jam 2019/Game-Jam/LifeandSoul/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/atiny/Desktop/Game Jam 2019/Game-Jam/LifeandSoul/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Users/atiny/Desktop/Game Jam 2019/Game-Jam/LifeandSoul/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+>>>>>>> gui
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -289,12 +338,6 @@
     </Reference>
     <Reference Include="UnityEngine.XRModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.8f1/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.8f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.8f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

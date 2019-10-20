@@ -18,7 +18,11 @@ public class TubosOn : MonoBehaviour
             }
             
         }
+<<<<<<< HEAD
         if(GetComponent<LiberaPorta>().porta == true)
+=======
+        else if(GetComponent<LiberaPorta>().porta == true)
+>>>>>>> gui
         {
             for (int i = 0; i < tubo.Length; i++)
             {
