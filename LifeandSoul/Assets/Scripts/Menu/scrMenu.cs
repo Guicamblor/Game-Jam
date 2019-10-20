@@ -5,22 +5,12 @@ using UnityEngine.SceneManagement;
 public class scrMenu : MonoBehaviour
 {
 
-    public void Tutorial()
-    {
-
-    }
-
-    public void Sobre()
-    {
-
-    }
-
-    public void VaiSalaCen()
+    public void Play()
     {
         SceneManager.LoadScene("SalaCen");
     }
 
-    public void Sair()
+    public void Quit()
     {
         Application.Quit();
     }
