@@ -63,14 +63,27 @@
   </ItemGroup>
   <ItemGroup>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Menu\scrMenu.cs" />
     <Compile Include="Assets\Scripts\Player\Interacao.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
     <None Include="Assets\Sprites\Font\upheaval.txt" />
 =======
     <Compile Include="Assets\Scripts\Player\Player.cs" />
+=======
+    <Compile Include="Assets\Scripts\Player\CameraControl2.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
+    <Compile Include="Assets\Scripts\Sala1Minigame\AI.cs" />
+    <Compile Include="Assets\Scripts\Sala1Minigame\Elevador.cs" />
+    <Compile Include="Assets\Scripts\Sala1Minigame\Esteira.cs" />
+>>>>>>> gui
     <Compile Include="Assets\Scripts\Sala1Minigame\Insta.cs" />
+    <Compile Include="Assets\Scripts\Sala1Minigame\LiberaPorta.cs" />
     <Compile Include="Assets\Scripts\Sala1Minigame\ObjInsdo.cs" />
+<<<<<<< HEAD
+>>>>>>> gui
+=======
+    <Compile Include="Assets\Scripts\Sala1Minigame\PickupOBJ.cs" />
 >>>>>>> gui
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/519115566/Desktop/Game-Jam/Game-Jam2/LifeandSoul/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
